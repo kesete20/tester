@@ -1,36 +1,52 @@
-
+/* whole body structure */
 html{
     background-color: white;
     font-family: sans-serif;
     font-size: 24px;
 
 }
+/* logo dementions */
 .logo{
     position: fixed;
     left: 100px;
-    top: 5px;
+    top: 15px;
     width: 20px;
     height: 20px;
     z-index: 4000;
+}
+.logo1{
+    width: 50px;
+    position: relative;
+    margin-top: 10px;
+
 }
 .logo h3{position: fixed;
-    left: 200px;
+    left: 160px;
     top: 5px;
     width: 20px;
     height: 20px;
     z-index: 4000;
 
 }
-
+/* menu dementions  */
 #menu{
-    color: white;
+    color: black;
     position: absolute;
     width: 100%;
     height: 92px;
     left: 0px;
     top: 0px;
-    background: #061528;
+   
     }
+    /* menu color and hovwr color */
+    a{
+        color: black;
+    }
+    a:hover{
+
+        color: white;
+    }
+    /* video dementions  */
 #myVideo {
     position: fixed;
     top: 0;
@@ -39,7 +55,7 @@ html{
     min-height: 100%;
     background-size: cover;
     background: url(Mountains.mp4);}
-
+/* home page  title and paragraph   */
 h1{ 
     position: fixed;
     width: 1200px;
@@ -69,6 +85,7 @@ h2{
     z-index: 500px;
 
 }
+ /* table dementions  */
 table {
     position: fixed;
     margin-left: 800px;
@@ -76,10 +93,11 @@ table {
     width: 500px;
     height: 500px;
     z-index: 100;
-    
+    background-color: white;
+        opacity: 60%;
 
     }
-
+/* menu demenitions */
 .UL{
 position: absolute;
 right:100px ;
@@ -89,31 +107,19 @@ z-index: 200;
 }
 li{
 display:inline-block;
-margin-left: 20px;}
+margin-left: 20px;
+}
+/* humberger button on desktop  */
 .fa-bars{
         display:none;}
 }
-table, th, td {
-    border: 6px solid black;
-    border-collapse: collapse;}
-th, td {
-    padding: 20px;
-     text-align: left;}
-}
-#form{
-    position: fixed;
-    top: 200px;
-    right: 100px;
-    border-radius: 30px;
-    color:#061528 ;
-    background: rgb(185, 182, 182);
-    width: 400px;
-    height: 360px;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    z-index: 100;
-}
+/* form dementions on desktop  */
+form{
+    position:fixed;
+    top:100px;
+    left:900px;
+   }
+   /* image position on desktop   */
 .img{position: fixed;
     top: 0;
     left: 0;
@@ -125,25 +131,68 @@ th, td {
     opacity: 80%;}
 
 }
+/* table dementions on desktop  */
 table {
-    width:100%;
     position: fixed;
-    margin-left: 400px;
-    margin-top: 400px;
+    right:1200px;
+    top: 600px;
+    width: 500px;
+    height: 700px;
+    z-index: 100;
+    background-color: white;
+        opacity: 60%;
+
     }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;}
 th, td {
-    padding: 5px;
-     text-align: left;}
+     text-align: center;}
+/* title contact us today  */
+.today{
+    position: fixed;
+    top: 350px;
+    left: 300px;
+    font-size: 36px;
+    width:600px;
+    z-index: 200;
+}
+/* footer dementions on desktop for copyright 2020 */
+footer{
+    position: fixed;
+    bottom: 15px;
+    left: 800px;
+   text-align: center;
+   font-size: 24px;
+    z-index: 200;
+}
+/* social madia icons  */
+.social{
+    z-index: 200;
+}
+.one { 
+    position: fixed;
+    bottom: 50px;
+    right: 180px;
+    
+}
+.two{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    
+}
 @media(max-width:1024px){
-.UL{
+/* menu size on ipad  */
+    .UL{
         font-size: 30px;
         }
-.fa-bars{
+.logo1{
+            width: 50px;
+            position: relative;
+            margin-top: 10px;}
+       /* humberger button on ipad  */
+            .fa-bars{
         display:none;}
-h1{ 
+     /* ipad title and paragraph for home page  */
+        h1{ 
     position: fixed;
     width: 800px;
     height: auto;
@@ -152,8 +201,9 @@ h1{
     opacity: 70%;
     margin-top: 500px ;
     margin-left: 190px ;
-    font-size: 90px;
-}p{
+    font-size: 90px;}
+   
+    p{
     position: fixed;
     width: 600px;
     height: auto;
@@ -162,84 +212,89 @@ h1{
     margin-top: 650px ;
     margin-left: 200px ;
     text-align: center;
-    opacity: 50px;
-}
-#form{
-    position: fixed;
-    top: 200px;
-    left: 100px;
-    border-radius: 30px;
-    color:#061528 ;
-    background: rgb(185, 182, 182);
-    width: 400px;
-    height: 360px;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    z-index: 100;
-}
-table {
-    position: fixed;
-    margin-left: 500px;
-    margin-top: 200px;
+    opacity: 50px;}
+/* ipad form dementions  */
+    form{
+    position: relative;
     width: 200px;
-    height: 200px;
-    z-index: 100;
-    
-
-    }
-table, th, td {
-    border: 3px solid black;
-    border-collapse: collapse;}
-th, td {
-    padding: 20px;
-     text-align: left;}
+    height: 700px;
+    top: 500px;
+    left: 300px; }
+    /* ipad table  */
+    table {
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    width: 500px;
+    height: 700px;
+    z-index: 100;}
+    /* footer for ipad */
+    footer{
+        position: fixed;
+        bottom: 15px;
+        left: 400px;
+       text-align: center;
+       font-size: 36px;
+        z-index: 200; }
+    /* social media ipad dementions   */
+        .one { 
+        position: fixed;
+        bottom: 50px;
+        right: 180px;}
+        .two{
+        position: fixed;
+        bottom: 50px;
+        right: 50px; }
 }
 @media(max-width:414px){
+    /*  table dementions on iphone */
     table {
         position: fixed;
-        margin-left: 20px;
-        margin-top: 150px;
-        width: 200px;
-        height: 200px;
-        z-index: 100;
-        
     
+        top: 100px;
+        width: 300px;
+        height: 500px;
+        z-index: 100;  
         }
-    table, th, td {
-        border: 3px solid black;
-        border-collapse: collapse;}
-    th, td {
-        padding: 20px;
-         text-align: left;}
-    .logo{
-        position: fixed;
-        left: 20px;
-        top: 5px;
-        width: 20px;
-        height: 20px;
-        z-index: 4000;
-    }
+   /* logo dementions on iphone  */
+   
+    .logo1{
+            width: 40px;
+            position: fixed;
+            margin-top: 10px;
+           left: 20px;
+        }
     .logo h3{position: fixed;
-        left: 120px;
-        top: 5px;
-        width: 20px;
-        height: 20px;
+        left: 65px;
+        top: 3px;
+        width: 10px;
+        height: 10px;
         z-index: 4000;}
-.UL{
-    display:none;
-    }
-    
+        /* menu dementions on iphone  */
+ ul{
+    position: fixed;
+    width: 120px;
+    height: auto;
+    margin-top: 100px;
+    left: 230px;
+}
+li{
+    color: black;
+    font-size: 20px;
+}
+
+    /*  humberger button on iphone  */
 .fa-bars{
         display:block;
         color: white;
         position: fixed;
-        top: 20px;
+        top: 25px;
         right:20px;
-        font-size:2em;
+        font-size:40px;
         z-index: 200;
 
         }
+        /* title and paragraph on home iphone page  */
         h1{ 
             position: fixed;
             width: 300px;
@@ -263,19 +318,40 @@ th, td {
             opacity: 50px;
             font-size: 18px;
         }
-        #form{
-            position: fixed;
-            top: 200px;
-            right: 12px;
-            border-radius: 30px;
-            color:#061528 ;
-            background: rgb(185, 182, 182);
-            width: 350px;
-            height: 360px;
-            padding: 20px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            z-index: 100;
+        /* form page on iphone  */
+        form{
+         position: relative;
+         top: 400px;
+         left: 20px;
         }
-        
+        /* title for contact us today on iphone  */
+        .today{
+            position: fixed;
+            top: 300px;
+            left: 20px;
+            font-size: 30px;
+            width:600px;
+            z-index: 200;}
+            /* iphone footer  */
+            footer{
+                position: fixed;
+                bottom: 10px;
+                left: 150px;
+               text-align: center;
+               font-size: 18px;
+                z-index: 200;
+            }
+            /* social media icon  */
+            .one { 
+                position: fixed;
+                bottom: 50px;
+                right: 120px;
+                width: 50px;
+            }
+            .two{
+                position: fixed;
+                bottom: 50px;
+                right: 50px;
+                width: 50px;
+            }
     }

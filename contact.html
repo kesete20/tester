@@ -10,13 +10,13 @@
 <body>
     
     <div class="logo">
-        <img src="logo.png" alt="img">
+        <img src="logo.png" class="logo1" alt="img" >
         <h3>Atlas</h3>
     </div>
     <div id="menu">
         <ul class="UL">
             <a href="index.html"> <li>Home</li></a>
-            <a href="schedule.html"> <li>Portfolios</li></a> 
+            <a href="schedule.html"> <li>Destinations</li></a> 
              <a href="contact.html"><li>Contact Us</li></a>
          </ul>
        </ul>
@@ -24,9 +24,14 @@
        <div id="fa-bars">
 <i class="fas fa-bars"></i>
 </div>
-  <div id="form">
-   <form method="POST" action="Dannykibrom7@gmail.com" enctype="text/plain">
-    Company <br>
+<div id="fa-bars"> 
+    <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+    <i class="fas fa-bars" style="color: #061528;"></i></a>
+</div>
+<div class="today">
+   <strong> Contact Us Today</strong>
+</div>
+   <form action="mailto:dannykibrom7@gmail.com">
     <input type="text" name="Company Name" > <br>
     Contact Person <br>
     <input type="text" name="contact"> <br>
@@ -39,6 +44,22 @@
     <input type="Submit" value="Submit">
    </form> 
   <img src="hinter.jpg" alt="img" class="img">
-  
+  <div class="social">
+  <a href="https://www.linkedin.com/in/daniel-kesete-95b490199/"><img src="download.png" alt="linkedin" class="one" width="80px"></a>
+  <a href="https://www.pinterest.com/dannykibrom/boards/"><img src="Pinterest.png" alt="Pinterest" class="two" width="80px"> </a>
+ </div>
+  <script>
+    function toggleHamburger() {
+        let x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<footer>
+    &copy; 2020 Atlas
+</footer>
 </body>
 </html>
