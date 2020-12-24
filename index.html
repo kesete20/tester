@@ -1,48 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e7d889d19c.js" crossorigin="anonymous"></script>
-    <title>Atlas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="logo">
-        <img src="logo.png" class="logo1" alt="img" >
-        <h3>Atlas</h3>
-    </div>
-    
-    <div id="menu">
-        <ul class="UL"  >
-          <a href="index.html"> <li>Home</li></a>
-          <a href="schedule.html"> <li>Destinations</li></a> 
-           <a href="contact.html"><li>Contact Us</li></a>
-       </ul>
-       </div>
-       <div id="fa-bars"> 
-    <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
-    <i class="fas fa-bars" style="color: #061528;"></i></a>
-</div>
-<div>
-    <h1>Feel The Nature</h1>
-    <p>Do you live for shows like Planet Earth and would like to experience a nature documentary for real? If so, your in the right page.</p>
-    <video autoplay muted loop id="myVideo">
-        <source src="Mountains.mp4" type="video/mp4">
-    </video>
-</div>
-<script>
-    function toggleHamburger() {
-        let x = document.getElementById("menu");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Reebok </title>
+    <link rel="icon" type="image/x-icon" href="Untitled-3.svg" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-    }
-</script>
-<footer>
-    &copy; 2020 Atlas
-</footer>
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="fake 2.svg" alt="" width="200px"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/test3.svg" alt="" max-width="200px" height="200px">
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+
+                            <h1>BOXING WEEK SALE</h1>
+                            <p>Save 50% OFF. Unwrap boxing day deals today.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/test5.svg" alt="" width="500px" height="300px">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>REEBOK EXTRA 40% OFF OUTLET</h1>
+                            <p>Offer ends January 05, 2021. Some exclusions apply. Cannot <br> be combined with other offers or promotions. Price matching <br> not applicable on previous orders. While supplies last.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/test1.svg" alt="" max-width="500px" height="300px">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>PAIR UP WITH US AND GET 15% OFF</h1>
+                            <p>Sign up today get 15% OFF for your first order </p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+
+                    <img src="../assets/img/men.jpg" alt="" width="140" height="140" border-radius="100">
+
+                    <h2>MEN'S</h2>
+                    <p>Clothes and Shoes <br>
+                    </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="../assets/img/women.jpg" alt="" width="140" height="140">
+
+                    <h2>WOMEN'S</h2>
+                    <p>Clothes and Shoes </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="../assets/img/kids.jpg" alt="" width="140" height="140">
+
+                    <h2>KIDS</h2>
+                    <p>Clothes and Shoes <br>
+                    </p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Latest product of the year</h2>
+                    <p class="lead"> <br><strong> Reebok Question Mid </strong> <br> <br> Men's.Black <br> $140.00 CAD</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../assets/img/OLD.jpg" alt="" max-width="500px" height="500px" radius="50%">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Pair up with us and get 15% off </h2>
+                    <br><strong> Reebok BB4000 </strong> <br> <br> Men's.White <br> $190.00 CAD</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="../assets/img/WHITE.jpg" alt="" max-width="500px" height="500px">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Best sports shoesof the year</h2>
+                    <p class="lead"><br><strong> Reebok Court Double Mix </strong> <br> <br> Women's.Black/Grey <br> $110.00 CAD</p>
+                    <p><a class="btn btn-lg btn-primary" href="#" role="button">BUY NOW</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../assets/img/BLACK.jpg" alt="" max-width="500px" height="500px">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>
